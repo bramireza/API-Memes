@@ -1,8 +1,8 @@
-const memeService = require("../services/memeService");
+import { getRandomMemeUrl } from "../services/memeService.js";
 
-exports.getRandomMeme = async (req, res) => {
+export const getRandomMeme = async (req, res) => {
   try {
-    const imageUrl = await memeService.getRandomMemeUrl();
+    const imageUrl = await getRandomMemeUrl();
     res.status(200).json({ imageUrl });
   } catch (error) {
     res.status(500).json({ message: "Internal server error" });

@@ -1,15 +1,16 @@
-const express = require("express");
-const cors = require("cors");
-const dotenv = require("dotenv");
-const router = require("./routes");
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import { router } from "./routes/index.js";
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
-app.get("/", (req, res) => {
+
+app.get("/", (_, res) => {
   res.send(`API is Running!${process.env.MEME_URL}`);
 });
 router(app);
 
-module.exports = app;
+export default app;

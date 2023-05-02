@@ -1,8 +1,8 @@
-const { Router } = require("express");
-const { getRandomMeme } = require("./memeController");
+import { Router } from "express";
+import { getRandomMeme } from "./memeController.js";
 
 const memeRouter = Router();
 
 memeRouter.get("/", getRandomMeme);
 
-module.exports = memeRouter;
+export default memeRouter;

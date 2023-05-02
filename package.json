@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "api de memes de memedroid",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
@@ -10,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bramireza/API-Memes.git"
+    "url": ""
   },
   "keywords": [
     "api",

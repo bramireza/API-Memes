@@ -1,11 +1,9 @@
-const memeRouter = require("../controllers");
+import memeRouter from "../controllers/index.js";
 
 const routes = [["meme", memeRouter]];
 
-const router = (app) => {
+export const router = (app) => {
   routes.forEach(([path, controller]) => {
     app.use(`/api/v1/${path}`, controller);
   });
 };
-
-module.exports = router;

@@ -1,5 +1,5 @@
-const axios = require("axios");
+import axios from "axios";
 
 const Axios = axios.create();
 
-module.exports = Axios;
+export default Axios;
