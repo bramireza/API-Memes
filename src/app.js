@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 
 app.get("/", (_, res) => {
-  res.send(`API is Sacraping to ! ${process.env.MEME_URL}`);
+  res.send(`API is Sacraping to ${process.env.MEME_URL}!`);
 });
 router(app);
 
