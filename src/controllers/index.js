@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { getRandomMeme } from "./memeController.js";
+import { getRandomMemeImage } from "./memeController.js";
 
 const memeRouter = Router();
 
-memeRouter.get("/", getRandomMeme);
+memeRouter.get("/", getRandomMemeImage);
 
 export default memeRouter;
