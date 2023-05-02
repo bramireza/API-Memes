@@ -7,6 +7,9 @@ dotenv.config();
 
 const app = express();
 app.use(cors());
+app.get("/", (req, res) => {
+  res.send(`API is Running!${process.env.MEME_URL}`);
+});
 router(app);
 
 module.exports = app;
