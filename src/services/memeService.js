@@ -1,10 +1,10 @@
-const axios = require("../utils/axios");
+const Axios = require("../utils/axios");
 const regex = require("../utils/regex");
 const random = require("../utils/random");
 const cheerio = require("cheerio");
 
 exports.getRandomMemeUrl = async () => {
-  const response = await axios.get(process.env.MEME_URL);
+  const response = await Axios.get(process.env.MEME_URL);
   const html = response.data;
   const $ = cheerio.load(html);
   const itemDivs = $("div.item-aux-container");

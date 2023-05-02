@@ -1,5 +1,4 @@
 const memeRouter = require("../controllers");
-const { getRandomMeme } = require("../controllers/memeController");
 
 const routes = [["meme", memeRouter]];
 
