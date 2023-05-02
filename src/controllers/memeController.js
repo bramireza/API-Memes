@@ -1,6 +1,6 @@
 import { getRandomMemeUrl } from "../services/memeService.js";
 
-export const getRandomMeme = async (req, res) => {
+export const getRandomMeme = async (_, res) => {
   try {
     const imageUrl = await getRandomMemeUrl();
     res.status(200).json({ imageUrl });
