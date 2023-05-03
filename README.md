@@ -97,3 +97,10 @@ If you find any issues or have suggestions for improvements, feel free to open a
 ## Demo
 
 https://meme-scraper-api.vercel.app/
+
+### Use
+
+```html
+<img src="https://meme-scraper-api.vercel.app/api/v1/random-meme/tag/programming"/>
+```
+<p align="center"><img src="https://meme-scraper-api.vercel.app/api/v1/random-meme/tag/programming" width="512px"/></p>
