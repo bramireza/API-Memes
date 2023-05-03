@@ -1,13 +1,13 @@
 {
-  "name": "api-memes",
+  "name": "meme-scraper-api",
   "version": "1.0.0",
-  "description": "api de memes de memedroid",
+  "description": "Meme scraper API to website Memedroid",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"No hay pruebas aún\""
+    "test": "echo \"No test yet\""
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "memes"
   ],
   "author": "@bramireza",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bramireza/API-Memes/issues"
   },

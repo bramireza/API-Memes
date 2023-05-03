@@ -1,6 +1,6 @@
 import memeRouter from "../controllers/index.js";
 
-const routes = [["meme", memeRouter]];
+const routes = [["random-meme", memeRouter]];
 
 export const router = (app) => {
   routes.forEach(([path, controller]) => {
