@@ -1,9 +1,11 @@
-import { getRandomMemeUrl } from "../services/memeService.js";
+import {
+  getRandomMemeUrl,
+  getRandomMemeUrlByTag,
+} from "../services/memeService.js";
 import Axios from "../utils/axios.js";
 
-export const getRandomMemeImage = async (_, res) => {
+const getMemeImage = async (imageUrl, res) => {
   try {
-    const imageUrl = await getRandomMemeUrl();
     const imageResponse = await Axios.get(imageUrl, {
       responseType: "arraybuffer",
     });
@@ -14,4 +16,15 @@ export const getRandomMemeImage = async (_, res) => {
   } catch (error) {
     res.status(500).json({ message: "Internal server error" });
   }
+};
+
+export const getRandomMemeImage = async (_, res) => {
+  const imageUrl = await getRandomMemeUrl();
+  await getMemeImage(imageUrl, res);
+};
+
+export const getRandomMemeImageByTag = async (req, res) => {
+  const { tag } = req.params;
+  const imageUrl = await getRandomMemeUrlByTag(tag);
+  await getMemeImage(imageUrl, res);
 };
