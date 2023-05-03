@@ -9,14 +9,14 @@ Install my-project with npm.
 1. Clone this repository:
 
 ```bash
-  git clone https://github.com/your-username/scraper-meme-api.git
+  git clone https://github.com/bramireza/Meme-Scraper-API.git
 
 ```
 
 2. Install dependencies:
 
 ```bash
-  cd scraper-meme-api
+  cd Meme-Scraper-API
   npm install
 ```
 
