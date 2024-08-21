@@ -23,7 +23,7 @@ Install my-project with npm.
 3. Crete a `.env` file in the root directory of the project with the following environment variables:
 
 ```bash
-  MEME_URL = https://www.memedroid.com/
+  MEME_URL = http://www.quickmeme.com
 ```
 
 4. Start the server
@@ -40,6 +40,12 @@ Install my-project with npm.
 | :-------------------- | :----- | :--------------------------------- |
 | `/api/v1/random-meme` | `GET`  | Returns a random meme image (JPEG) |
 
+#### Get List Categories
+
+| Endpoint              | Method | Description                        |
+| :-------------------- | :----- | :--------------------------------- |
+| `/api/v1/random-meme/listCategories` | `GET`  | Returns a list categories |
+
 #### Get One Random Meme By tag
 
 | Endpoint                        | Method | Description                                                        |
@@ -52,7 +58,7 @@ To run this project, you will need to add the following environment variables to
 
 `PORT = YOUR-PORT-AVAILABLE` (Example: `8000`)
 
-`MEME_URL = https://www.memedroid.com/`
+`MEME_URL = http://www.quickmeme.com`
 
 ## Usage
 
