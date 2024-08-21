@@ -1,7 +1,7 @@
 {
   "name": "meme-scraper-api",
   "version": "1.0.0",
-  "description": "Meme scraper API to website Memedroid",
+  "description": "Meme scraper API to website quickmeme",
   "main": "index.js",
   "type": "module",
   "scripts": {
