@@ -1,4 +1,4 @@
-import memeRouter from "../controllers/index.js";
+import memeRouter from "./memeRoutes.js";
 
 const routes = [["random-meme", memeRouter]];
 
